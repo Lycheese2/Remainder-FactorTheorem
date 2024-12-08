@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder and Factor Theorem - Full Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tutorial-container">
+        <header class="header">
+            <h1>Remainder and Factor Theorem: Full Tutorial</h1>
+            <p>Learn how to solve polynomial division using the Remainder and Factor Theorem!</p>
+        </header>
+        
+        <section class="theorem">
+            <h2>Step 1: Understanding the Remainder Theorem</h2>
+            <p>The Remainder Theorem states that when a polynomial <em>f(x)</em> is divided by <em>(x - c)</em>, the remainder is <em>f(c)</em>. This means that the remainder of the division is just the result of substituting <em>c</em> into the polynomial.</p>
+            <p>For example, if you divide <em>f(x) = x³ - 6x² + 11x - 6</em> by <em>(x - 2)</em>, we can find the remainder by simply calculating <em>f(2)</em>.</p>
+            <div class="example">
+                <h3>Example:</h3>
+                <p>Let's find the remainder when <em>f(x) = x³ - 6x² + 11x - 6</em> is divided by <em>(x - 2)</em>.</p>
+                <pre>f(2) = 2³ - 6 * 2² + 11 * 2 - 6 = 8 - 24 + 22 - 6 = 0</pre>
+                <p>The remainder is 0, so <em>(x - 2)</em> is a factor of <em>f(x)</em>.</p>
+            </div>
+        </section>
+
+        <section class="factor-theorem">
+            <h2>Step 2: Understanding the Factor Theorem</h2>
+            <p>The Factor Theorem states that if <em>f(c) = 0</em), then <em>(x - c)</em> is a factor of the polynomial <em>f(x)</em>.</p>
+            <p>So, in the example above, because <em>f(2) = 0</em>, <em>(x - 2)</em> is a factor of <em>x³ - 6x² + 11x - 6</em>.</p>
+            <div class="example">
+                <h3>Example:</h3>
+                <p>If <em>f(x) = x³ - 6x² + 11x - 6</em> and <em>f(2) = 0</em>, then <em>(x - 2)</em> is a factor of <em>f(x)</em>.</p>
+                <pre>f(x) = (x - 2)(x² - 4x + 3)</pre>
+                <p>This is how we factor the polynomial!</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <button onclick="goToQuiz()">Start the Game: Solve Problems!</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve the Problem - Remainder and Factor Theorem Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="header">
+            <h1>Solve the Problem!</h1>
+            <p>Use the tutorial to solve the equation. Let’s see if you can do it!</p>
+        </header>
+
+        <section class="problem">
+            <p><strong>Problem:</strong> Given <em>f(x) = x³ - 6x² + 11x - 6</em>, find the remainder when divided by <em>(x - 2)</em>.</p>
+            <input type="number" id="userInput" class="quiz-input" placeholder="Enter your answer">
+            <button onclick="checkAnswer()" class="quiz-btn">Check Answer</button>
+            <div id="feedback" class="feedback"></div>
+        </section>
+        
+        <div id="solution" class="solution">
+            <h3>Solution:</h3>
+            <p>The remainder is <strong>0</strong> because <em>f(2) = 0</em>. So, <em>(x - 2)</em> is a factor of <em>x³ - 6x² + 11x - 6</em>.</p>
+            <p>We can then factor the polynomial as:</p>
+            <pre>f(x) = (x - 2)(x² - 4x + 3)</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

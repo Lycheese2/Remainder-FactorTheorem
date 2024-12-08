@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve the Problem - Remainder and Factor Theorem Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="header">
+            <h1>Solve the Problem!</h1>
+            <p>Use the tutorial to solve the equation. Let’s see if you can do it!</p>
+        </header>
+
+        <section class="problem">
+            <p><strong>Problem:</strong> Given <em>f(x) = x³ - 6x² + 11x - 6</em>, find the remainder when divided by <em>(x - 2)</em>.</p>
+            <input type="number" id="userInput" class="quiz-input" placeholder="Enter your answer">
+            <button onclick="checkAnswer()" class="quiz-btn">Check Answer</button>
+            <div id="feedback" class="feedback"></div>
+        </section>
+
+        <!-- Solution will be shown after they answer -->
+        <div id="solution" class="solution">
+            <h3>Solution:</h3>
+            <p>We’ll apply the Remainder Theorem and substitute <em>x = 2</em> into the function.</p>
+            <pre>f(x) = x³ - 6x² + 11x - 6</pre>
+            <p>Substitute <em>x = 2</em>:</p>
+            <pre>f(2) = (2)³ - 6(2)² + 11(2) - 6</pre>
+            <p>f(2) = 8 - 24 + 22 - 6 = <strong>0</strong></p>
+            <p>So, the remainder is <strong>0</strong>, and <em>(x - 2)</em> is a factor of the polynomial.</p>
+            <p>The factored form of the polynomial is:</p>
+            <pre>f(x) = (x - 2)(x² - 4x + 3)</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
